@@ -149,7 +149,19 @@ section {
 	background-color:#FFF;
 	height: 100%;
     width: 100%;
-	}
+}
+    
+.section_small_nyuyoku {
+    position:relative;
+    padding:3.25em 1.25em 4.375em;
+    background-color:#FFF;
+    height: 300px;
+    width: 100%;
+    background-color: #f2f2f2;
+    background-image: url('../media/nyunyoku.svg'), none;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
 
 .section_small_work {
 	position:relative;
@@ -161,7 +173,7 @@ section {
     background-image: url('../media/balloon.svg'), none;
     background-repeat: no-repeat;
     background-position: right bottom;
-	}
+}
 .section_small_books {
 	position:relative;
 	padding:3.25em 1.25em 4.375em;
@@ -172,7 +184,7 @@ section {
     background-image: url('../media/language_absolute.svg'), none;
     background-repeat: no-repeat;
     background-position: right bottom;
-	}
+}
 .section_small_moma {
 	position:relative;
 	padding:3.25em 1.25em 4.375em;
@@ -183,7 +195,7 @@ section {
     background-image: url('../media/moma.svg'), none;
     background-repeat: no-repeat;
     background-position: right bottom;
-	}
+}
 .section_small_bike {
 	position:relative;
 	padding:3.25em 1.25em 4.375em;
@@ -194,7 +206,7 @@ section {
     background-image: url('../media/bikemark.svg'), none;
     background-repeat: no-repeat;
     background-position: right bottom;
-	}
+}
 .section_small_bitkar {
 	position:relative;
 	padding:3.25em 1.25em 4.375em;
@@ -205,20 +217,18 @@ section {
     background-image: url('../media/bikemark.svg'), none;
     background-repeat: no-repeat;
     background-position: right bottom;
-	}
+}
 
-
-
-h1.title, h2.subtitle{
+h1.title, h2.subtitle {
 	color: #FFFFFF;
 }
 
-h1.title{
+h1.titl e{
 	font-size: 4em;
 	font-weight:300;
 }
 
-hr{
+hr {
 	width:30%;
 }
 
