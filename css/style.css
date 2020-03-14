@@ -496,10 +496,17 @@ padding: 0;
 
 #work{
     background-color: #f2f2f2;
+    background-image: url('../media/nyunyoku.svg'), none;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+#nomads{
+    background-color: #f2f2f2;
     background-image: url('../media/balloon.svg'), none;
     background-repeat: no-repeat;
     background-position: right bottom;
 }
+
 #mybooks{
     background: url('../media/language_absolute.png');
     background-image: url('../media/language_absolute.svg'), none;
