@@ -1,1 +1,234 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrea's Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- My Css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Awesome font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Josefin+Slab:300,400' rel='stylesheet' type='text/css'>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    var menuIsOpen = false;
+    
+    function toggleMenu() {
+    var menu = $('#navpannel');
+    var main = $('#main');
+    menuIsOpen = !menuIsOpen;
+    $("html").css("overflow", menuIsOpen ? "hidden":"visible");
+
+    $('#navpannel').animate({
+    right: menuIsOpen ? '+=300' : '-=300'
+    }, 1000);
+    $('#main').animate({
+    left: menuIsOpen ? '-=300' : '+=300'
+    }, 1000);
+    }
+    </script>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="navpannel">
+            <li id="closemenu" onclick="toggleMenu()"><i class="fa fa-times fa-lg"></i></li>
+            <ul id="closemenuul">
+            <li><a class="white" id="link-hello" href="#about" onclick="toggleMenu()">Hello</a></li>
+            <li><a class="white" id="link-work" href="#nomads" onclick="toggleMenu()">My Projects</a></li>
+            <li><a class="white" id="link-resume" href="#resume" onclick="toggleMenu()">Resume</a></li>
+            <li><a class="white" id="link-contact" href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </ul>
+        </div>
+        <div id="main">
+    		<nav id="menu">
+				<div id="nav-menu">
+					<ul id="main-nav">
+                        <li class="float-right" onclick="toggleMenu()"><i class="fa fa-bars fa-lg"></i></li>
+					</ul>
+				</div>
+			</nav>
+            <!--
+            <div id="mainFooter">
+                <ul id="mainFooterul">
+                    <li><a class="scroll" href="#work"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>-->
+          <div id="page">
+    		<section id="hello">
+            </section>
+              <div id="introText">
+                  <h1 class="section_title">Andrea Cornaglia</h1>
+                    <h2 class="section_subtitle">UI/UX Designer</h1>
+              </div>
+              <div class="mainFooter">
+                <ul class="mainFooterul">
+                    <li><a class="scroll" href="#work"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>
+            <section id="work">
+                <div class="section_text">
+                    <h1 class="section_title">Nomads</h1>
+                    <h2 class="section_subtitle">A travel diary app</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            UX Development
+                        </li>
+                        <li class="section_li">
+                            Concept &amp; Design
+                        </li>
+                        <li class="section_li">
+                            Thesis Project
+                        </li>
+                    </ul>
+                    <a class="section_a" href="work.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+                <div class="mainFooter">
+                <ul class="mainFooterul">
+                    <li><a class="scroll" href="#mybooks"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>
+            </section>
+            <section id="mybooks">
+                <div class="section_text">
+                    <h1 class="section_title">My books</h1>
+                    <h2 class="section_subtitle">An interactive infographic</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            Data Visualization
+                        </li>
+                        <li class="section_li">
+                            D3.JS &amp; Javascript
+                        </li>
+                        <li class="section_li">
+                            Visual Development
+                        </li>
+                    </ul>
+                    <a class="section_a" href="mybooks.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+            <div class="mainFooter">
+                <ul class="mainFooterul">
+                    <li><a class="scroll" href="#momaapp"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>
+            </section>
+            <section id="momaapp">
+                <div class="section_text">
+                    <h1 class="section_title">Moma Audioguide</h1>
+                    <h2 class="section_subtitle">A JQuery Mobile App</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            JQuery Mobile
+                        </li>
+                        <li class="section_li">
+                            JSON &amp; Javascript
+                        </li>
+                        <li class="section_li">
+                            HTML5 audio
+                        </li>
+                    </ul>
+                    <a class="section_a" href="moma.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+                <div class="mainFooter">
+                <ul class="mainFooterul">
+                    <li><a class="scroll" href="#bitkarapp"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>
+            </section>
+            <section id="bitkarapp">
+                <div class="section_text">
+                    <h1 class="section_title">Bitkar</h1>
+                    <h2 class="section_subtitle">Website and Mobile redesign</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            User Experience
+                        </li>
+                        <li class="section_li">
+                            Visual Design
+                        </li>
+                        <li class="section_li">
+                            html/css/jQuery
+                        </li>
+                    </ul>
+                    <a class="section_a" href="bitkarapp.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+                <div class="mainFooter">
+                <ul class="mainFooterul">
+                    <li><a class="scroll" href="#bikemark"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>
+            </section>
+            <section id="bikemark">
+                <div class="section_text">
+                    <h1 class="section_title">BikeMark App</h1>
+                    <h2 class="section_subtitle">A bike app prototype.</h1>
+                    <ul class="section_list">
+                        <li class="section_li">
+                            Animations on Mobile
+                        </li>
+                        <li class="section_li">
+                            Framer.JS
+                        </li>
+                        <li class="section_li">
+                            UX Development
+                        </li>
+                    </ul>
+                   <a class="section_a" href="bike.html"><button class="btn btn-default">Go to Project</button></a>
+                </div>
+                <div class="mainFooter">
+                <ul class="mainFooterul">
+                    <li><a class="scroll" href="#resume"><i class="fa fa-chevron-circle-down fa-lg"></i></a></li>
+				</ul>
+            </div>
+            </section>
+               <section id="resume">
+                   <div class="row">
+                   <div class="col-md-6">
+                    <h2 class="resume_title">Resume</h1>
+                   <a href="media/Andrea_Cornaglia_resume.pdf"><img class="medium img-responsive greyborder" src="media/resume2.png"/></a>
+                   </div>
+                   <div id='contact' class="col-md-6">
+                    <h2 class="resume_title">Contact</h1>
+                        <p>andreacornaglia@gmail.com</p>
+                        <p><a href="https://www.linkedin.com/in/andrea-cornaglia-3bbb0a8a">Linkedin</a></p>
+                        <!--<p>Dribble<a href="https://dribbble.com/acornaglia"></a></p>-->
+                       <p><a href="https://www.behance.net/andreacornaglia">Behance</a></p>
+                  </div>
+                </div>
+                <div class="mainFooter">
+                <footer>
+        	      <p id="copy">&copy; 2016 Andrea Cornaglia. Thanks for stopping by!</p>
+                </footer>
+            </div>
+               </section>
+             <!-- <section id="contact"></section> -->
+        
+          </div>
+       </div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(".scroll").click(function(event){
+         event.preventDefault();
+         //calculate destination place
+         var dest=0;
+         if($(this.hash).offset().top > $(document).height()-$(window).height()){
+              dest=$(document).height()-$(window).height();
+         }else{
+              dest=$(this.hash).offset().top;
+         }
+         //go to destination
+         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+     });
+    </script>
+  </body>
+</html>
