@@ -11,6 +11,3 @@ Thesis project for my MFA in Web Design, developed over a year and a half.
 Design: Research, User Interviews, mockups, UX flows and Visual Design Development.
 Development: Implemented Front-End using HTML, CSS, Bootstrap, JSON. Implemented Google Maps api.
 
-# Live link
-View in mobile screen size http://andreacornaglia.net/nomads/
-
