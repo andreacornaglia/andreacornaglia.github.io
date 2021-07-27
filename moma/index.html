@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>First Mobile Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="hhttp://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<link
+  href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700"
+  rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div data-role="page" id="homePage" data-fullscreen="true" data-add-back-btn="true">
+    <div data-role="header" data-theme="c" id="momaheader">
+      <h4>MoMA audioguide</h4>
+      <div data-role="navbar">
+        <ul id="nav">
+          <li><a href="index.html" class="ui-state-persit" rel="external"><img
+                src="images/home.png" class="icon"
+                height="25px" /></a></li>
+          <li><a href="search.html" class="ui-state-off" rel="external"><img
+                src="images/search.png" class="icon"
+                height="25px" /></a></li>
+          <li><a href="map.html" class="ui-state-off" rel="external"><img
+                src="images/map.png" class="icon"
+                height="25px" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <div id="superior2">
+        <p class="title">Current Exhibits</p>
+      </div>
+      <div id="container">
+        <p class="uptitle">Expressionism</p>
+        <div id="img2">
+          <a href="javascript:goToItem('k')" id="website" relation="external">
+            <img src="images/k0.jpg" class="big" id="photo" />
+          </a>
+        </div>
+        <p class="subtitle">From 05.2.13 to 08.15.13</p>
+      </div>
+      <div id="super2">
+        <div class="dot2 enhaced"></div>
+        <div class="dot2"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="c"><span>Copyright Andrea Cornaglia &copy;2013 <a
+          href="http://www.moma.org/" id="full" rel="external">Full
+          site</a></span>
+    </div>
+  </div>
+  <script>
+    var i = 0;
+    var up = [
+      "Abstraction",
+      "Expressionism",
+      "Cubism"
+    ]
+
+    var sub = [
+      "From 05.2.13 to 08.15.13",
+      "From 06.10.13 to 09.12.13",
+      "From 07.01.13 to 10.25.13"
+    ]
+
+    var nop = [
+      "k",
+      "m",
+      "p"
+    ]
+
+    function goToItem(item) {
+      window.location = "artist.html?item=" + item;
+    }
+
+    $(function () {
+      $("#container").on('swipeleft', onSwiLe);
+
+      function onSwiLe(event) {
+        if (i >= 0 && i <= 2) {
+          i++;
+          //$("#website").attr('href', "artist.html?item=" +nop[i]);
+          $("#website").attr('href', "javascript:goToItem(" + nop[i] + ")");
+          $("#photo").attr('src', "images/" + nop[i] + "1.jpg");
+          $("p.subtitle").html(sub[i]);
+          $("p.uptitle").html(up[i]);
+          $("div.enhaced").next().addClass("enhaced");
+          $("div.enhaced").first().removeClass("enhaced");
+        }
+      }
+
+      $("#container").on('swiperight', onSwiRi);
+
+      function onSwiRi(event) {
+        if (i >= 0 && i <= 2) {
+          i--;
+          $("#website").attr('href', nop[i] + ".html");
+          $("#photo").attr('src', "images/" + nop[i] + "1.jpg");
+          $("p.subtitle").html(sub[i]);
+          $("p.uptitle").html(up[i]);
+          $("div.enhaced").prev().addClass("enhaced");
+          $("div.enhaced").last().removeClass("enhaced");
+        }
+      }
+
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Nomads</title>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="favicons/manifest.json">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="start">
+
+    <div id="header" class="white">
+        <div class="header_main">
+          <div class="lefticon">
+              <i class="fa fa-navicon" id="lefticon"></i>
+              <img src="favicons/desktop_nav.png" id="nomads_icon">
+              <div class="noti_dot"></div>
+          </div>
+          <h1 id="headerTitle">Nomads</h1>
+          <div class="righticon"><i id="righticon" class="fa fa-plus"></i></div>
+          <ul id="header_menu">
+              <li class="header_menu_item">Trips</li>
+              <li class="header_menu_item">Friends</li>
+              <li class="header_menu_item">Profile</li>
+          </ul>
+        </div>
+        <div style="clear:both"></div>
+        <div id="filter">
+            <div class="filter_box_container">
+                <div class="filter_box" id="this_week">This week <i class="fa fa-chevron-down"></i></div>
+                <div class="filter_box filter_tag_disabled" id="all_times" style="float: right;">All tags<i class="fa fa-chevron-down"></i></div>
+            </div>
+            <div class="filter_dialogue">
+                <div class="tag_container_filter">
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_1"></div>
+              <p>#camping</p>
+            </div>
+            <div class="tag_container_b tag_landmark">
+              <div class="tag tag_active tag_2"></div>
+              <p>#hiking</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_3"></div>
+              <p>#plane</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_4"></div>
+              <p>#roadtrip</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_5"></div>
+              <p>#beach</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_6"></div>
+              <p>#museum</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_7"></div>
+              <p>#landmark</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_8"></div>
+              <p>#show</p>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div id="filter_b">
+            <div class="filter_b_text">
+                <p>TIME</p>
+                <p>This week</p>
+                <p>This year</p>
+                <p>All times</p>
+                <p id="ptags">TAGS</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_1"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_2"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_3"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_4"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_5"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_6"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_7"></div>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_active tag_8"></div>
+            </div>
+        </div>
+        <div id="filter_friend">
+            <div class="filter_box_container">
+            <div class="filter_box_friend" id="this_week"><i class="fa fa-search"></i>Search for your friends</div>
+            </div>
+        </div>
+    </div>
+    <div id="friend_top">
+    </div>
+    <div id="map">
+    </div>
+
+    <div id="menu">
+        <ul id="menu_list">
+            <li id="menuOptionNotif">Notification
+                <a href="#"></a>
+                <span class="notifi">1</span>
+            </li>
+            <li>Trending
+                <a href="#"></a>
+            </li>
+            <li>Trips
+                <a href="#"></a>
+            </li>
+            <li>Profile
+                <a href="#"></a>
+            </li>
+            <li id="menuOptionFriends">Friends
+                <a href="#friends"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page" id="homePage">
+        <div id="thisweek_content">
+            <div class="row row_complex">
+                <div class="column2 row23" id="capadoccia"></div>
+                <div class="column2">
+                    <div class="row2 yellow photosThisWeek">
+                        <img class="home_icon" src="images/photo_icon.png">
+                        <p class="bignumber">22</p>
+                    </div>
+                    <div class="row2 blue locationsThisWeek">
+                        <img class="home_icon2" src="images/map5.png">
+                        <p class="bignumber">4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_complex row_reversible">
+                <div class="column2">
+                    <div class="row2 yellow photosThisWeek">
+                        <img class="tag tag_home" src="images/tag4.png">
+                        <p class="bignumber">3</p>
+                    </div>
+                    <div class="row2 blue locationsThisWeek">
+                        <img class="tag tag_home" src="images/tag6.png">
+                        <p class="bignumber">2</p>
+                    </div>
+                </div>
+                <div class="column2 row23" id="seattle"></div>
+            </div>
+            <div class="row_invisible">
+                <div class="column2b row23" id="anothercity"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="page" id="markerPopup">
+        <div id="user_info">
+            <div class="user_text">
+                <div class="user_image" id="postUserImage"></div>
+                <h1 class="foto_description" id="foto_description">Wow, this place is out of this world! Added to my trip wishlist!</h1>
+            </div>
+            <div class="name_n_date">
+                <h1 class="postPlace" id="postPlace">Cancun, Mexico</h1>
+                <h1 class="postData" id="postData">1 h ago</h1>
+            </div>
+        </div>
+        <div id="post_info">
+        </div>
+        <div id="like_comment">
+            <div id="likec_tags">
+                <img class="small_tag" src="images/tag2.png">
+                <img class="small_tag" src="images/tag6.png">
+            </div>
+            <div class="lcb">
+                <div id="like">
+                    <i id="like_btn" class="fa fa-heart-o">&nbsp;&nbsp;&nbsp;</i>
+                    13
+                </div>
+                <div id="comment">
+                    <i id="comment_btn" class="fa fa-comment-o">&nbsp;&nbsp;&nbsp;</i>2</div>
+                <div id="bookmark">
+                    <i id="bookmark_btn" class="fa fa-bookmark-o"></i>&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="carrousel">
+            <div class="comment_item">
+                <div class="user_text">
+                    <div class="user_image" id="postUserImageC1"></div>
+                    <h1 class="foto_description" id="foto_descriptionC">Wow, this place is out of this world! Added to my trip wishlist!</h1>
+                </div>
+                <div class="name_n_date">
+                    <h1 class="postPlace" id="postPlaceC">Jime C.</h1>
+                    <h1 class="postData" id="postDataC">1 h ago</h1>
+                </div>
+            </div>
+            <div class="comment_item">
+                <div class="user_text">
+                    <div class="user_image" id="postUserImageC2"></div>
+                    <h1 class="foto_description" id="foto_description">I'm planning to go there next year! So exciting!</h1>
+                </div>
+                <div class="name_n_date">
+                    <h1 class="postPlace" id="postPlace">James M.</h1>
+                    <h1 class="postData" id="postData">3 h ago</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="profilePage">
+        <div id="user_info">
+            <div class="user_image" id="profileUserImage">
+                <img src="images/virginia.png">
+            </div>
+            <div id="user_text">
+                <h1>Gimena</h1>
+                <h1>Friends since 2012</h1>
+            </div>
+        </div>
+        <div id="mini_map">
+        </div>
+        <div id="stats">
+            <div class="stats_tile a"></div>
+            <div class="stats_tile b"></div>
+            <div class="stats_tile c"></div>
+            <div class="stats_tile d"></div>
+        </div>
+    </div>
+
+    <div class="page" id="makePost">
+        <!--   <p class="steps">Step 1. Select your trip's location</p> -->
+        <div id="add_location" class="add_label off" tabindex="1">
+            <i class="fa fa-map-marker pin"></i><span id="add_loc_text">Add Location</span>
+            <div id="loc_dropdown" class="dropdown"></div>
+        </div>
+        <!--    <p class="add_label">Step 2. Select photos</p>  -->
+        <div class="photo_container_ftu">
+            <div class="photo_container_ftu_content">
+              <img class="photo_upload_img" src="images/photo_icon.png">
+              <p class="photo_upload_text">Choose up to six photos!</p>
+            </div>
+            <input type="file" id="inputFile" name="file[]" multiple>
+        </div>
+        <div class="photo_container">
+        </div>
+        <!-- <p class="add_label">Step 3. Add some comments</p>  -->
+        <div class="container" style="width:100%">
+        <textarea class="create_post_textarea" placeholder="Enter your awesome notes here!"></textarea>
+        <span id="textarea_feedback"></span>
+        </div>
+        <!-- <p class="add_label">Step 4. Add tags</p>  -->
+        <div class="tag_container">
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_1"></div>
+              <p>#camping</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_2"></div>
+              <p>#hiking</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_3"></div>
+              <p>#plane</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_4"></div>
+              <p>#roadtrip</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_5"></div>
+              <p>#beach</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_6"></div>
+              <p>#museum</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_7"></div>
+              <p>#landmark</p>
+            </div>
+            <div class="tag_container_b">
+              <div class="tag tag_inactive tag_8"></div>
+              <p>#show</p>
+            </div>
+        </div>
+        <!--<p class="add_label2">Share on:</p>-->
+        <div class="socialmed_container">
+            <div class="socialm_btn btn_off"><i class="fa fa-facebook"></i><span class="spam_media">Facebook</span></div>
+            <div class="socialm_btn btn_off"><i class="fa fa-twitter"></i><span class="spam_media">Twitter</span></div>
+            <div class="socialm_btn btn_off"><i class="fa fa-instagram"></i><span class="spam_media">Instagram</span></div>
+            <div class="socialm_btn btn_off"><i class="fa fa-pinterest"></i><span class="spam_media">Pinterest</span></div>
+        </div>
+        <div class="button_bottom">
+            post memory
+        </div>
+    </div>
+    <div class="page" id="photos_week">
+        <div class="column"> 
+       </div>
+    </div>
+    <div class="page" id="friends">
+    </div>
+    
+    <div class="page" id="friendPage">
+        <div id="thisweek_content">
+            <div class="row row_complex">
+                <div class="column2 row23" id="capadoccia3"></div>
+                <div class="column2">
+                    <div class="row2 yellow">
+                        <img class="home_icon" src="images/photo_icon.png">
+                        <p class="bignumber">22</p>
+                    </div>
+                    <div class="row2 blue">
+                        <img class="home_icon2" src="images/map5.png">
+                        <p class="bignumber">4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="message_alert_box">
+    Your trip was successfully uploaded! <span>see post</span>
+    </div>
+    <!--Scripts-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.2.js"></script>
+   <!--<script src="js/handlebar_templates.js"></script> -->
+    <script type="text/javascript" src="js/maps.js"></script>
+    <script type="text/javascript" src="js/uifunction.js"></script>
+    <script type="text/javascript" src="js/database.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9I1PqBH3s8Z3Qgg-5CGgPmc2Q9fi5yg&libraries=places&callback=initMap"></script>
+    <script type="text/javascript" src="js/markerclusterer_compiled.js"></script>
+    <script id="test-template" type="text/x-handlebars-template">
+    <div class="group" id="{{id}}">
+        <div class='left'>
+            <div class="large-box" style="background-image:url({{image1}})">
+              <!--  <img src="{{image1}}"> -->
+            </div>
+        </div>
+        <div class='right' >
+            <div class="box" style="background-image:url({{image2}})"></div>
+            <div class="box" style="background-image:url({{image3}})"></div>
+        </div>
+    </div>
+    
+    <div class="group">
+        <div class='left'>
+            <div class="box" style="background-image:url({{image4}})"></div>
+            <div class="box" style="background-image:url({{image5}})"></div>
+        </div>
+        <div class='right'>
+            <div class="large-box" style="background-image:url({{image6}})"></div>
+        </div>
+    </div>
+</script>
+</body>
+
+</html>
